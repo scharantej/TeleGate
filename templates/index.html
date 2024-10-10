@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Telegram Bot Interaction</title>
+</head>
+<body>
+<h1>Send a Message to the Bot</h1>
+<form action="/send_message" method="POST">
+<label for="message">Message:</label>
+<input type="text" name="message" id="message">
+<input type="submit" value="Send">
+</form>
+
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+</body>
+</html>
+
